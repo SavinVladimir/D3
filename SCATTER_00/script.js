@@ -1,9 +1,9 @@
-function makeDemo1() {
+function scatter() {
     d3.tsv( "data.tsv" )
         .then( function( data ) {
             d3.select( "svg" )
                 .selectAll( "circle" )
-                .data( data )
+                .data(data)
                 .enter()
                 .append( "circle" )
                 .attr( "r", 5 ).attr( "fill", "red" )
